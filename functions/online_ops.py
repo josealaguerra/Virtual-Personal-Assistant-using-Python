@@ -1,15 +1,15 @@
 import requests
-import wikipedia
-import pywhatkit as kit
+#import wikipedia
+#import pywhatkit as kit
 from email.message import EmailMessage
 import smtplib
-from decouple import config
+#from decouple import config
 
-NEWS_API_KEY = config("NEWS_API_KEY")
-OPENWEATHER_APP_ID = config("OPENWEATHER_APP_ID")
-TMDB_API_KEY = config("TMDB_API_KEY")
-EMAIL = config("EMAIL")
-PASSWORD = config("PASSWORD")
+#NEWS_API_KEY = config("NEWS_API_KEY")
+#OPENWEATHER_APP_ID = config("OPENWEATHER_APP_ID")
+#TMDB_API_KEY = config("TMDB_API_KEY")
+#EMAIL = config("EMAIL")
+#PASSWORD = config("PASSWORD")
 
 
 def find_my_ip():
@@ -17,9 +17,9 @@ def find_my_ip():
     return ip_address["ip"]
 
 
-def search_on_wikipedia(query):
-    results = wikipedia.summary(query, sentences=2)
-    return results
+#def search_on_wikipedia(query):
+#    results = wikipedia.summary(query, sentences=2)
+#    return results
 
 
 def play_on_youtube(video):
